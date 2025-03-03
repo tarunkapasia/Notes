@@ -1,5 +1,8 @@
 git init
 git status
+git config --global user.email "youremail@address"
+git branch -M main
+git remote add origin https://github.com/tarunkapasia/Notes.git
 git add .
 git commit -m "message"
 git pull origin master
