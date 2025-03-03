@@ -7,5 +7,54 @@ git add .
 git commit -m "message"
 git pull origin master
 git push origin branch-name
+git push origin branch-name  -f (force push)
+git log (for history)
+
+git reset commit-id (commit-id is of stage to which you wanna switch or rollback)
+-------------------------------------------------------------------------------------
+git stash	(remove unsaved commits -- move them back in stash)
+git stash pop (bring those commits back )
+git stash clear (clear the stash)
+
+-----------------------------------------------------------------------------------
+git branch branch-name
+git checkout branch-name
+
+git remove -v  (all branches/repos)
+--------------------------------------------------------------------------
+merge-->switch to main branch
+git merge branch-name
+------------------------------------------------------------------------------
+git clone url  (project in your local)
+
+--------------------------------------------
+fork via  command
+
+git remote upstream url 
+------------------------------------------------
+
+fetch upstream commmits
+1.
+git fetch --all --prune (fetch all branches)
+
+git reset --hard upstream/main  (sync your brach to main of upstream)
+
+git push origin main
+
+2.
+git pull upstream main
+git push origin main
+---------------------------------------------------
+
+
+git rebase commit-id (to merge all commits -- pick 1 squash rest into picked one)
+
+
+------------------------------------------------------------------
+Difference between reset and rebase ?
+Reset is used to go back any commit and rebase is merging all commits into single commit
+
+
+
 
 
