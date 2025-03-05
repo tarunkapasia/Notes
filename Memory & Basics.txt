@@ -1,0 +1,41 @@
+
+
+
+a = 10
+
+a is reference which is stored in stack
+10 is an object which is stored in heap .
+
+
+there can many reference to same object , if object changes then it will change for all references.
+
+[
+Pass By reference you pass the address of object , 
+if object is chnged on that reference it will change for all variables pointing to that reference.
+Ex : a=[1,2,3,4] , b=a , a[0]=99, output b= [99,2,3,4]
+
+
+Pass By Value , actual value is passed
+Ex : a=[1,2,3,4] , b=a , a[0]=99, output b= [1,2,3,4]
+]
+
+Pass by refernce in Java
+
+------------------------------------------------------
+Objects with no reference variable will be collected by Garbage Colector.
+
+a=10
+a=37
+
+Now object 10 is avialble for garbage collector
+
+
+-----------------------------------------------------------------
+
+Java file ----(complier -entire file)--> Byte-Code (.class) file ------(Interpretor -line by line)---> Machine Code (0 & 1)
+
+--Byte Code File is platform independent can run on any Machine
+--to convert Byte Code to Machine Code we need JVM 
+--JVM is different for every machine i.e.
+--JAVA is platform independent and JVM is platform dependent
+
